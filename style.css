@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080808;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+header {
+  padding: 35px 15px;
+  background: linear-gradient(135deg, #111, #260000);
+  border-bottom: 2px solid #ff2020;
+}
+
+header h1 {
+  font-size: 30px;
+  color: #ff3030;
+  text-shadow: 0 0 15px #ff0000;
+}
+
+header p {
+  margin-top: 10px;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.hero {
+  margin: 25px 15px;
+  padding: 45px 20px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #171717, #090909);
+  border: 1px solid #ff3030;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.25);
+}
+
+.hero h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: #bbb;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 14px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #ff2020;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  padding: 20px 15px;
+}
+
+.card {
+  padding: 25px 18px;
+  border-radius: 16px;
+  background: #121212;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #ff2020;
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.25);
+}
+
+.card h2 {
+  color: #ff3030;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #bbb;
+  line-height: 1.5;
+}
+
+footer {
+  margin-top: 30px;
+  padding: 25px 10px;
+  background: #050505;
+  color: #777;
+  border-top: 1px solid #222;
+}
+
+footer p {
+  margin: 5px;
+}
+
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .hero {
+    max-width: 900px;
+    margin: 30px auto;
+  }
+}
